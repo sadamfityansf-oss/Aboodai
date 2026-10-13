@@ -1,23 +1,20 @@
-# Aboodai
-Wedding card
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دعوة زفاف مصطفى وأماني</title>
+    <title>دعوة زفاف - مصطفى & أماني</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Reem+Kufi:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-gold: #d4af37;
-            --accent-gold: #f3e5ab;
-            --bg-black: #121212;
-            --card-black: #1e1e1e;
-            --text-gold: #e6ca65;
-            --text-light: #f5f5f5;
+            --gold: #d4af37;
+            --gold-light: #f3e5ab;
+            --dark-bg: #0d0d0d;
+            --card-bg: #161616;
+            --text-main: #f5f5f5;
         }
 
         * {
@@ -27,149 +24,157 @@ Wedding card
         }
 
         body {
-            background-color: var(--bg-black);
-            color: var(--text-light);
+            background-color: var(--dark-bg);
+            color: var(--text-main);
             font-family: 'Amiri', serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
-            background-image: radial-gradient(circle at center, #222222 0%, #0a0a0a 100%);
+            padding: 15px;
+            background-image: radial-gradient(circle at center, #1f1f1f 0%, #080808 100%);
         }
 
-        .invitation-card {
-            background-color: var(--card-black);
-            border: 2px solid var(--primary-gold);
-            border-radius: 16px;
-            padding: 40px 25px;
-            max-width: 550px;
+        .invitation-container {
+            background-color: var(--card-bg);
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            padding: 35px 20px;
+            max-width: 500px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
             position: relative;
-            outline: 1px solid var(--primary-gold);
-            outline-offset: -10px;
+            outline: 1px solid var(--gold);
+            outline-offset: -8px;
         }
 
-        .header-title {
+        .bismillah {
+            font-size: 1.3rem;
+            color: var(--gold-light);
+            margin-bottom: 15px;
+        }
+
+        .title {
             font-family: 'Reem Kufi', sans-serif;
-            font-size: 2.2rem;
-            color: var(--primary-gold);
-            margin-bottom: 10px;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 15px;
             letter-spacing: 1px;
         }
 
-        .family-names {
-            font-size: 1.1rem;
-            color: #ccc;
-            margin-bottom: 25px;
+        .families {
+            font-size: 1rem;
+            color: #d1d1d1;
             line-height: 1.8;
+            margin-bottom: 20px;
         }
 
         .couple-names {
             font-family: 'Reem Kufi', sans-serif;
-            font-size: 2.6rem;
-            color: var(--accent-gold);
-            margin: 20px 0;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            font-size: 2.3rem;
+            color: var(--gold-light);
+            margin: 15px 0;
+            text-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
         }
 
         .details-box {
-            border-top: 1px solid var(--primary-gold);
-            border-bottom: 1px solid var(--primary-gold);
-            padding: 20px 0;
-            margin: 25px 0;
-            line-height: 2;
-            font-size: 1.2rem;
+            border-top: 1px solid var(--gold);
+            border-bottom: 1px solid var(--gold);
+            padding: 18px 0;
+            margin: 20px 0;
+            line-height: 1.9;
+            font-size: 1.1rem;
         }
 
         .highlight {
-            color: var(--primary-gold);
+            color: var(--gold);
             font-weight: bold;
         }
 
-        /* Countdown Timer */
+        /* العداد التنازلي */
         .timer-container {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin: 25px 0;
+            gap: 10px;
+            margin: 20px 0;
         }
 
         .timer-box {
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid var(--primary-gold);
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid var(--gold);
             border-radius: 8px;
-            padding: 10px;
-            min-width: 70px;
+            padding: 8px;
+            min-width: 65px;
         }
 
         .timer-number {
-            font-size: 1.5rem;
-            color: var(--accent-gold);
+            font-size: 1.4rem;
+            color: var(--gold-light);
             font-weight: bold;
         }
 
         .timer-label {
-            font-size: 0.8rem;
-            color: #aaa;
+            font-size: 0.75rem;
+            color: #bbb;
         }
 
-        /* Action Buttons */
+        /* الأزرار */
         .btn-group {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-top: 25px;
+            gap: 10px;
+            margin-top: 20px;
         }
 
         .btn {
             background-color: transparent;
-            color: var(--primary-gold);
-            border: 1px solid var(--primary-gold);
-            padding: 12px 20px;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            padding: 11px 15px;
             border-radius: 25px;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: bold;
             transition: all 0.3s ease;
             cursor: pointer;
+            font-family: 'Reem Kufi', sans-serif;
         }
 
         .btn:hover {
-            background-color: var(--primary-gold);
+            background-color: var(--gold);
             color: #000;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
         }
 
-        @media (max-width: 480px) {
-            .header-title { font-size: 1.8rem; }
-            .couple-names { font-size: 2.1rem; }
-            .details-box { font-size: 1.05rem; }
-            .timer-box { min-width: 55px; }
+        .footer-note {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
-    <div class="invitation-card">
-        <h1 class="header-title">دعوة زفاف</h1>
+    <div class="invitation-container">
+        <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <h1 class="title">دعوة زفاف مباركة</h1>
         
-        <p class="family-names">
-            يتشرف **عائلة مصطفى** و **عائلة فتيان**<br>
-            بدعوتكم لمشاركتهم فرحة العمر بمناسبة عقد قران أبنائهم
+        <p class="families">
+            بكل الحب والمودة، تتشرف<br>
+            <b>عائلة مصطفى (العريس)</b> و <b>عائلة فتيان (العروس)</b><br>
+            بدعوتكم لمشاركتهم فرحة العمر بمناسبة عقد قران أبنائهم:
         </p>
 
         <div class="couple-names">
-            مصطفى <span style="font-size: 1.8rem; color: var(--primary-gold);">&</span> أماني
+            مصطفى & أماني
         </div>
 
         <div class="details-box">
-            <p>🗓 <b>اليوم:</b> يوم الاثنين - الموافق <span class="highlight">19-10-2026</span></p>
+            <p>🗓 <b>اليوم والتاريخ:</b> يوم الاثنين الموافق <span class="highlight">19-10-2026</span></p>
             <p>⏰ <b>الوقت:</b> من الساعة <span class="highlight">7:30 مساءً</span> ولغاية <span class="highlight">11:00 مساءً</span></p>
             <p>📍 <b>المكان:</b> فندق سراج - جبل الحسين</p>
-            <p style="font-size: 0.95rem; color: #aaa;">(بجانب مستشفى الكندي)</p>
+            <p style="font-size: 0.9rem; color: #ccc;">(بجانب مستشفى الكندي)</p>
         </div>
 
         <!-- العداد التنازلي -->
@@ -192,15 +197,17 @@ Wedding card
             </div>
         </div>
 
-        <!-- أزرار التفاعل -->
+        <!-- الأزرار التفاعلية -->
         <div class="btn-group">
-            <a href="https://maps.google.com/?q=Siraj+Hotel+Amman" target="_blank" class="btn">📍 موقع الفندق على الخريطة</a>
-            <button onclick="addToCalendar()" class="btn">📅 إضافة إلى التقويم</button>
+            <a href="https://maps.google.com/?q=Siraj+Hotel+Amman+Al_Hussein+Hospital" target="_blank" class="btn">📍 موقع الفندق على الخريطة</a>
+            <button onclick="addToCalendar()" class="btn">📅 إضافة الموعد إلى التقويم</button>
         </div>
+
+        <p class="footer-note">حضوركم يسعدنا ويزيد ليلتنا بهجة وسروراً</p>
     </div>
 
     <script>
-        // إعداد تاريخ المناسبة
+        // إعداد التاريخ المستهدف للزفاف
         const targetDate = new Date("October 19, 2026 19:30:00").getTime();
 
         const updateCountdown = () => {
@@ -218,18 +225,18 @@ Wedding card
                 document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
                 document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
             } else {
-                document.querySelector(".timer-container").innerHTML = "<p style='color:var(--primary-gold); font-weight:bold;'>أهلاً وسهلاً بكم في حفلنا!</p>";
+                document.querySelector(".timer-container").innerHTML = "<p style='color:var(--gold); font-weight:bold; font-size:1.1rem;'>أهلاً وسهلاً بكم في حفل زفافنا اليوم!</p>";
             }
         };
 
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // إضافة الحدث لتقويم جوجل
+        // دالة إضافة الموعد لتقويم جوجل
         function addToCalendar() {
             const title = encodeURIComponent("حفل زفاف مصطفى وأماني");
-            const details = encodeURIComponent("حفل زفاف مصطفى وأماني في فندق سراج - جبل الحسين بجانب مستشفى الكندي.");
-            const location = encodeURIComponent("فندق سراج، جبل الحسين، عمان");
+            const details = encodeURIComponent("حفل زفاف مصطفى وأماني في فندق سراج - جبل الحسين، بجانب مستشفى الكندي.");
+            const location = encodeURIComponent("فندق سراج، جبل الحسين، عمان، الأردن");
             const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261019T163000Z/20261019T200000Z&details=${details}&location=${location}`;
             window.open(calendarUrl, '_blank');
         }
