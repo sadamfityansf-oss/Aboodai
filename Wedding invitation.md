@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -162,8 +162,7 @@
         
         <p class="families">
             بكل الحب والمودة، تتشرف<br>
-            <b>آل مصطفى </b> و <b>عائلة
-            آل فتيان</b><br>
+            <b>آل مصطفى </b> و <b>آل فتيان</b><br>
             بدعوتكم لمشاركتهم فرحة العمر بمناسبة عقد قران أبنائهم:
         </p>
 
@@ -173,7 +172,7 @@
 
         <div class="details-box">
             <p>🗓 <b>اليوم والتاريخ:</b> يوم الاثنين الموافق <span class="highlight">19-10-2026</span></p>
-            <p>⏰ <b>الوقت:</b> من الساعة <span class="highlight”8:30 مساءً</span> ولغاية <span class="highlight">11:00 مساءً</span></p>
+            <p>⏰ <b>الوقت:</b> من الساعة <span class="highlight">8:30 مساءً</span> ولغاية <span class="highlight">11:00 مساءً</span></p>
             <p>📍 <b>المكان:</b> فندق سراج - جبل الحسين</p>
             <p style="font-size: 0.9rem; color: #ccc;">(بجانب مستشفى الكندي)</p>
         </div>
