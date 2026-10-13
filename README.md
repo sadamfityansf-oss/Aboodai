@@ -173,7 +173,7 @@
 
         <div class="details-box">
             <p>🗓 <b>اليوم والتاريخ:</b> يوم الاثنين الموافق <span class="highlight">19-10-2026</span></p>
-            <p>⏰ <b>الوقت:</b> من الساعة <span class="highlight">7:30 مساءً</span> ولغاية <span class="highlight">11:00 مساءً</span></p>
+            <p>⏰ <b>الوقت:</b> من الساعة <span class="highlight”8:30 مساءً</span> ولغاية <span class="highlight">11:00 مساءً</span></p>
             <p>📍 <b>المكان:</b> فندق سراج - جبل الحسين</p>
             <p style="font-size: 0.9rem; color: #ccc;">(بجانب مستشفى الكندي)</p>
         </div>
